@@ -10,7 +10,12 @@ on:
 
 jobs:
   lint:
+    name: Lint
     runs-on: ubuntu-latest
+
+    permissions:
+      security-events: read
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4

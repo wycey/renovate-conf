@@ -15,6 +15,10 @@
   "enabledManagers": ["npm", "github-actions", "dockerfile", "docker-compose"],
   "reviewers": ["team:developers"],
   "labels": ["deps"],
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "assignees": ["@instructr13"]
+  },
   "rollback": {
     "autoApprove": false,
     "automerge": false,
