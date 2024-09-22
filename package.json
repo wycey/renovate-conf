@@ -1,0 +1,26 @@
+{
+  "name": "@wycey/renovate-conf",
+  "private": true,
+  "type": "module",
+  "author": {
+    "name": "Wycey",
+    "email": "contact@wycey.dev",
+    "url": "https://wycey.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wycey/renovate-conf.git"
+  },
+  "scripts": {
+    "prepare": "lefthook install",
+    "lint": "renovate-config-validator default.json"
+  },
+  "devDependencies": {
+    "lefthook": "^1.7.15",
+    "renovate": "^38.93.2"
+  },
+  "trustedDependencies": [
+    "core-js-pure",
+    "protobufjs"
+  ]
+}
