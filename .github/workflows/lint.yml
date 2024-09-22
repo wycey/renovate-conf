@@ -26,7 +26,7 @@ jobs:
 
       - name: Test run
         run: |
-          bun exec renovate \
+          bun run renovate \
               --dry-run \
               --schedule= \
               --require-config=ignored \
