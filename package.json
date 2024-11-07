@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "lefthook": "^1.7.15",
-    "renovate": "^38.93.2"
+    "renovate": "^39.0.0"
   },
   "trustedDependencies": [
     "core-js-pure",
