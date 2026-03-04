@@ -9,8 +9,7 @@
     "customManagers:biomeVersions"
   ],
   "baseBranches": [
-    "$default",
-    "develop"
+    "$default"
   ],
   "configMigration": true,
   "autoApprove": true,
