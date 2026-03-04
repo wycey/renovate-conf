@@ -5,10 +5,9 @@
     ":semanticPrefixChore",
     ":semanticCommitScope(deps)",
     ":automergeMinor",
-    "schedule:daily",
-    "customManagers:biomeVersions"
+    "schedule:daily"
   ],
-  "baseBranches": ["$default"],
+  "baseBranchPatterns": ["$default"],
   "configMigration": true,
   "autoApprove": true,
   "minimumReleaseAge": "3 days",
@@ -20,6 +19,10 @@
     "labels": ["security"],
     "assignees": ["@instructr13"]
   },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
   "rollback": {
     "autoApprove": false,
     "automerge": false,
@@ -27,11 +30,6 @@
     "schedule": ["at any time"]
   },
   "packageRules": [
-    {
-      "groupName": "Disable autoApprove for major updates",
-      "matchUpdateTypes": ["major"],
-      "autoApprove": false
-    },
     {
       "groupName": "Enable automerge for devDependencies",
       "matchDepTypes": ["devDependencies"],
