@@ -8,32 +8,57 @@
     "schedule:daily",
     "customManagers:biomeVersions"
   ],
-  "baseBranches": ["$default", "develop"],
+  "baseBranches": [
+    "$default",
+    "develop"
+  ],
+  "configMigration": true,
   "autoApprove": true,
   "minimumReleaseAge": "3 days",
   "timezone": "Asia/Tokyo",
-  "enabledManagers": ["npm", "github-actions", "dockerfile", "docker-compose"],
-  "reviewers": ["team:developers"],
-  "labels": ["deps"],
+  "enabledManagers": [
+    "npm",
+    "github-actions",
+    "dockerfile",
+    "docker-compose"
+  ],
+  "reviewers": [
+    "team:developers"
+  ],
+  "labels": [
+    "deps"
+  ],
   "vulnerabilityAlerts": {
-    "labels": ["security"],
-    "assignees": ["@instructr13"]
+    "labels": [
+      "security"
+    ],
+    "assignees": [
+      "@instructr13"
+    ]
   },
   "rollback": {
     "autoApprove": false,
     "automerge": false,
-    "addLabels": ["hotfix"],
-    "schedule": ["at any time"]
+    "addLabels": [
+      "hotfix"
+    ],
+    "schedule": [
+      "at any time"
+    ]
   },
   "packageRules": [
     {
       "groupName": "Disable autoApprove for major updates",
-      "matchUpdateTypes": ["major"],
+      "matchUpdateTypes": [
+        "major"
+      ],
       "autoApprove": false
     },
     {
       "groupName": "Enable automerge for devDependencies",
-      "matchDepTypes": ["devDependencies"],
+      "matchDepTypes": [
+        "devDependencies"
+      ],
       "automerge": true
     }
   ]
