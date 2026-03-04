@@ -16,8 +16,8 @@
     "lint": "renovate-config-validator default.json"
   },
   "devDependencies": {
-    "lefthook": "^1.7.15",
-    "renovate": "^42.68.5"
+    "lefthook": "^2.0.0",
+    "renovate": "^43.0.0"
   },
   "trustedDependencies": [
     "core-js-pure",
