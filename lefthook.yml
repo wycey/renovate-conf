@@ -1,6 +1,6 @@
 pre-commit:
   parallel: true
   commands:
-    eslint:
+    lint:
       glob: "default.json"
       run: bun lint
