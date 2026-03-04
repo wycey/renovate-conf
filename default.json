@@ -12,7 +12,6 @@
   "autoApprove": true,
   "minimumReleaseAge": "3 days",
   "timezone": "Asia/Tokyo",
-  "enabledManagers": ["npm", "github-actions", "dockerfile", "docker-compose"],
   "reviewers": ["team:developers"],
   "labels": ["deps"],
   "vulnerabilityAlerts": {
