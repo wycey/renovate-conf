@@ -5,22 +5,21 @@
     ":semanticPrefixChore",
     ":semanticCommitScope(deps)",
     ":automergeMinor",
-    "schedule:daily"
+    ":configMigration",
+    ":label(deps)",
+    ":maintainLockFilesWeekly",
+    ":reviewers(team:developers)",
+    ":timezone(Asia/Tokyo)",
+    "abandonments:recommended",
+    "group:definitelyTyped",
+    "schedule:daily",
+    "security:minimumReleaseAgeNpm"
   ],
   "baseBranchPatterns": ["$default"],
-  "configMigration": true,
   "autoApprove": true,
-  "minimumReleaseAge": "3 days",
-  "timezone": "Asia/Tokyo",
-  "reviewers": ["team:developers"],
-  "labels": ["deps"],
   "vulnerabilityAlerts": {
     "labels": ["security"],
     "assignees": ["@instructr13"]
-  },
-  "lockFileMaintenance": {
-    "enabled": true,
-    "automerge": true
   },
   "rollback": {
     "autoApprove": false,
