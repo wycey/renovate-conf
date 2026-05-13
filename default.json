@@ -8,7 +8,6 @@
     ":configMigration",
     ":label(deps)",
     ":maintainLockFilesWeekly",
-    ":reviewers(team:developers)",
     ":timezone(Asia/Tokyo)",
     "abandonments:recommended",
     "group:definitelyTyped",
@@ -17,6 +16,7 @@
   ],
   "baseBranchPatterns": ["$default"],
   "autoApprove": true,
+  "reviewers": ["team:developers"],
   "vulnerabilityAlerts": {
     "labels": ["security"],
     "assignees": ["@instructr13"]
